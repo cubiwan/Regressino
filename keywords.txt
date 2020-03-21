@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring Map Debug
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+Linearregression	KEYWORD1
+ExponentialRegression   KEYWORD1
+LogarithmicRegression   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+learn	KEYWORD2
+calculate	KEYWORD2
+correlation	KEYWORD2
+getValues	KEYWORD2
+reset   KEYWORD2
+samples KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
