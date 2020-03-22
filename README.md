@@ -2,6 +2,17 @@
 
 Library to calculate potential, exponential, logarithmic, and lineal regression in Arduino.
 
+Lineal: **Y = a*X + b**  
+Exponential: **Y = b * e^(a*X)**   
+Logarithmic: **Y = a*ln(X) + b**  
+Potential: **Y = b * x^a**  
+
+Graphs with a = 2 and b = 3:
+
+![](https://raw.githubusercontent.com/cubiwan/Regressino/master/Regressino.png)
+
+
+## Use
 
 ### Include
 
@@ -78,11 +89,6 @@ void parameters(double values[]);
 Return parameters of the regression
 * values[0] = a;
 * values[1] = b;
-
-Lineal: **Y = a*X + b**  
-Exponential: **Y = b * e^(a*X)**   
-Logarithmic: **Y = a*ln(X) + b**  
-Potential: **Y = b * x^a**  
   
   
 ```c
