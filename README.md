@@ -1,6 +1,6 @@
 # Regressino &nbsp;&nbsp;&nbsp;&nbsp;<a href='https://ko-fi.com/I2I012UF3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
-Library to calculate exponential, logarithmic, and lineal regression in Arduino.
+Library to calculate potential, exponential, logarithmic, and lineal regression in Arduino.
 
 
 ### Include
@@ -29,6 +29,14 @@ ExponentialRegression er = ExponentialRegression;
 LogarithmicRegression lr = LogarithmicRegression();
 ```
 
+#### Potential
+
+```c
+#include <PotentialRegression.h>
+
+PotentialRegression pr = PotentialRegression();
+```
+
 ### Methods
 
 ```c
@@ -39,6 +47,7 @@ Learns one example.
 * x: value of X
 * y: value of Y
 
+  
 ```c
 double calculate(int x);  
 ```
@@ -46,18 +55,22 @@ double calculate(int x);
 Estimates value of Y for X
 * x: value of x 
 
+
+
 ```c
 double correlation();  
 ```
 
 Return actual correlation value
 
+   
 ```c
 void reset();  
 ```
 
 Reset values. Start learning since zero.
 
+  
 ```c
 void parameters(double values[]);
 ```
@@ -69,7 +82,8 @@ Return parameters of the regression
 Lineal: **Y = a*X + b**  
 Exponential: **Y = b * e^(a*X)**   
 Logarithmic: **Y = a*ln(X) + b**  
-
+  
+  
 ```c
 void samples();
 ```
