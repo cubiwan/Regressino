@@ -82,6 +82,7 @@ Return parameters of the regression
 Lineal: **Y = a*X + b**  
 Exponential: **Y = b * e^(a*X)**   
 Logarithmic: **Y = a*ln(X) + b**  
+Potential: **Y = b * x^a**  
   
   
 ```c
