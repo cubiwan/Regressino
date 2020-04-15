@@ -6,7 +6,7 @@ Lineal: **Y = a*X + b**
 Exponential: **Y = b * e^(a*X)**   
 Logarithmic: **Y = a*ln(X) + b**  
 Potential: **Y = b * x^a**  
-Logistic: **Y = 1 / 1 + e^-(mx+b)**
+Logistic: **Y = 1 / 1 + e^-(a*x+b)**
 
 Graphs with a = 2 and b = 3:
 
