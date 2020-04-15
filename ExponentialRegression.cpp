@@ -30,6 +30,10 @@ int ExponentialRegression::samples(){
     return lr.samples();
 }
 
+double ExponentialRegression::error(double x, double y) {    
+    return abs(y - calculate(x));
+}
+
 void ExponentialRegression::reset(){
     lr.reset();
 }

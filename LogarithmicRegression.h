@@ -12,6 +12,7 @@ class LogarithmicRegression {
         void parameters(double values[]);
         void reset();
         int samples();
+        double error(double x, double y);
     private:
         LinearRegression lr;
 };

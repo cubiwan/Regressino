@@ -1,10 +1,10 @@
-#ifndef PotentialRegression_h
-#define PotentialRegression_h
+#ifndef LogisticRegression_h
+#define LogisticRegression_h
 
 #include "Arduino.h"
 #include "LinearRegression.h"
 
-class PotentialRegression {
+class LogisticRegression {
     public:
         void learn(double x, double y);
         double calculate(double x);

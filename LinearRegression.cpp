@@ -47,6 +47,10 @@ int LinearRegression::samples(){
     return n;
 }
 
+double LinearRegression::error(double x, double y) {    
+    return abs(y - calculate(x));
+}
+
 void LinearRegression::reset(){
     meanX = 0;
     meanX2 = 0;

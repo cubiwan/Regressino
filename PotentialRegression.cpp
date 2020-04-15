@@ -30,6 +30,10 @@ int PotentialRegression::samples(){
     return lr.samples();
 }
 
+double PotentialRegression::error(double x, double y) {    
+    return abs(y - calculate(x));
+}
+
 void PotentialRegression::reset(){
     lr.reset();
 }

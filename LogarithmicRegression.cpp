@@ -23,6 +23,10 @@ int LogarithmicRegression::samples(){
     return lr.samples();
 }
 
+double LogarithmicRegression::error(double x, double y) {    
+    return abs(y - calculate(x));
+}
+
 void LogarithmicRegression::reset(){
     lr.reset();
 }

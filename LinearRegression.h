@@ -11,6 +11,7 @@ class LinearRegression {
         void parameters(double values[]);
         void reset();
         int samples();
+        double error(double x, double y); 
     private:
         double meanX = 0;
         double meanX2 = 0; //mean x²
