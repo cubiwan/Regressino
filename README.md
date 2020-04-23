@@ -106,7 +106,7 @@ Return parameters of the regression
 double error(double x, double y);  
 ```
   
-Return estimation error. If you need a library to calculate estimation error use [Errorduino](https://github.com/cubiwan/errorduino) 
+Return estimation error. If you need more options to calculate error you can use [Errorduino](https://github.com/cubiwan/errorduino) 
 
   
 ```c
