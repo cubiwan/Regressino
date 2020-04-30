@@ -68,30 +68,30 @@ void learn(int x, int y);
 
 Learns one example.
 * x: value of X
-* y: value of Y
-
+* y: value of Y  
+<br>
   
 ```c
 double calculate(int x);  
 ```
 
 Estimates value of Y for X
-* x: value of x 
-
+* x: value of x  
+<br>
   
 ```c
 double correlation();  
 ```
 
-Return actual correlation value
-
+Return correlation value  
+<br>
    
 ```c
 void reset();  
 ```
 
-Reset values. Start learning since zero.
-
+Reset values. Start learning since zero.  
+<br>
   
 ```c
 void parameters(double values[]);
@@ -99,15 +99,15 @@ void parameters(double values[]);
 
 Return parameters of the regression
 * values[0] = a;
-* values[1] = b;
-  
+* values[1] = b;  
+<br>  
 
 ```c
 double error(double x, double y);  
 ```
   
-Return estimation error. If you need more options to calculate error you can use [Errorduino](https://github.com/cubiwan/errorduino) 
-
+Return estimation error. If you need more options to calculate error you can use [Errorduino](https://github.com/cubiwan/errorduino)  
+<br>
   
 ```c
 void samples();
