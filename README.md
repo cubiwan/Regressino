@@ -19,6 +19,10 @@ Logistic regression:
 
 ![](https://raw.githubusercontent.com/cubiwan/Regressino/master/Logistic.png)
 
+Polynomial regression:
+
+![](https://raw.githubusercontent.com/cubiwan/Regressino/master/polynomial.png)
+
 Linear and Logistic 2 variables
 
 ![](https://raw.githubusercontent.com/cubiwan/Regressino/master/Linear2.png)
