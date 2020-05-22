@@ -9,7 +9,7 @@ Potential: **Y = b * x^a**
 Logistic: **Y = 1 / (1 + e^-(a*x+b))**  
 Polynomial: **Y = a1*x^2 + a2*x + b**  
 Linear2d: **Y = a1*x1 + a2*x2 + b**  
-Logistic2d:
+Logistic2d:**Y = 1 / (1 + e^-(1*x1 + a2*x2 + b))** 
 
 Graphs with a = 2 and b = 3:
 
