@@ -6,7 +6,10 @@ Lineal: **Y = a*X + b**
 Exponential: **Y = b * e^(a*X)**   
 Logarithmic: **Y = a*ln(X) + b**  
 Potential: **Y = b * x^a**  
-Logistic: **Y = 1 / (1 + e^-(a*x+b))**
+Logistic: **Y = 1 / (1 + e^-(a*x+b))**  
+Polynomial: **Y = a1*x^2 + a2*x + b**  
+Linear2d: **Y = a1*x1 + a2*x2 + b**  
+Logistic2d:
 
 Graphs with a = 2 and b = 3:
 
@@ -16,9 +19,15 @@ Logistic regression:
 
 ![](https://raw.githubusercontent.com/cubiwan/Regressino/master/Logistic.png)
 
+Linear and Logistic 2 variables
+
+![](https://raw.githubusercontent.com/cubiwan/Regressino/master/Linear2.png)
+
 ## Use
 
-### Include
+### Include 
+
+#### 1 variable
 
 #### Linear 
 
@@ -60,10 +69,36 @@ PotentialRegression pr = PotentialRegression();
 LogisticRegression pr = LogisticRegression();
 ```
 
-### Methods
+#### Polynomial
 
 ```c
-void learn(int x, int y);  
+#include < PolynomialRegression.h>
+
+ PolynomialRegression pr =  PolynomialRegression();
+```
+
+#### 2 variables
+
+#### Linear2d
+
+```c
+#include <LinearRegression2d.h>
+
+LinearRegression lr = LinearRegression2d();
+```
+
+#### Logistic2d (not available yet)
+
+```c
+#include <LogisticRegression2d.h>
+
+LogisticRegression pr = LogisticRegression2d();
+```
+
+### Methods 1 variable
+
+```c
+void learn(double x, double y);  
 ```
 
 Learns one example.
@@ -72,7 +107,7 @@ Learns one example.
 <br>
   
 ```c
-double calculate(int x);  
+double calculate(double x1);  
 ```
 
 Estimates value of Y for X
@@ -97,9 +132,14 @@ Reset values. Start learning since zero.
 void parameters(double values[]);
 ```
 
-Return parameters of the regression
-* values[0] = a;
+Return parameters of the regression *y = mx + b*
+* values[0] = m;
 * values[1] = b;  
+
+In polynomial values are *y = b1x^2 + b2x + a* :
+* values[0] = b1;
+* values[1] = b2;  
+* values[2] = a;  
 <br>  
 
 ```c
@@ -115,3 +155,88 @@ void samples();
 Return number of examples learned
 
 
+### Methods 2 variables
+
+```c
+void learn(double x1, double x2, double y);  
+```
+
+Learns one example.
+* x1: value of X1
+* x2: value of X2
+* y: value of Y  
+<br>
+  
+```c
+double calculate(double x1, double x2);  
+```
+
+Estimates value of Y 
+* x1: value of x1 
+* x2: value of x2  
+<br>
+  
+```c
+double correlation();  
+```
+
+Return correlation value  
+<br>
+
+```c
+double correlationX1Y();  
+```
+
+Return correlation value between X1 and Y
+<br>
+
+```c
+double correlationX1Y();  
+```
+
+Return correlation value between X1 and Y
+<br>
+   
+```c
+double correlationX2Y();  
+```
+
+Return correlation value between X2 and Y
+<br>
+   
+```c
+double correlationX1X2();  
+```
+
+Return correlation value between X1 and X2
+<br>
+      
+
+```c
+void reset();  
+```
+
+Reset values. Start learning since zero.  
+<br>
+  
+```c
+void parameters(double values[]);
+```
+
+Return parameters of the regression *y = b1x1 + b2x2 + a*
+* values[0] = b1;
+* values[1] = b2;
+* values[2] = a;  
+<br>  
+
+```c
+double error(double x1, double x2, double y);  
+```
+  
+Return estimation error. If you need more options to calculate error you can use [Errorduino](https://github.com/cubiwan/errorduino)  
+<br>
+  
+```c
+void samples();
+```
+Return number of examples learned
