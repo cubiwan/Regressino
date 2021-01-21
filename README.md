@@ -91,7 +91,7 @@ LogisticRegression pr = LogisticRegression();
 LinearRegression lr = LinearRegression2d();
 ```
 
-#### Logistic2d (not available yet)
+#### Logistic2d 
 
 ```c
 #include <LogisticRegression2d.h>
@@ -150,7 +150,7 @@ In polynomial values are *y = b1x^2 + b2x + a* :
 double error(double x, double y);  
 ```
   
-Return estimation error. If you need more options to calculate error you can use [Errorduino](https://github.com/cubiwan/errorduino)  
+Return estimation error. If you need more options to calculate error you can use error module from [SimpleStatisticsArduino](https://github.com/cubiwan/SimpleStatisticsArduino)  
 <br>
   
 ```c
@@ -237,7 +237,7 @@ Return parameters of the regression *y = b1x1 + b2x2 + a*
 double error(double x1, double x2, double y);  
 ```
   
-Return estimation error. If you need more options to calculate error you can use [Errorduino](https://github.com/cubiwan/errorduino)  
+Return estimation error. If you need more options to calculate error you can use error module from [SimpleStatisticsArduino](https://github.com/cubiwan/SimpleStatisticsArduino) 
 <br>
   
 ```c
