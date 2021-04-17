@@ -14,7 +14,7 @@ double PotentialRegression::correlation() {
 }
 
 double PotentialRegression::calculate(double x) {
-    double values[2]; //p[0] is a; p[1] is b
+    double values[2]; 
     lr.parameters(values); 
     double a = values[0];
     double b = pow(10, values[1]);
