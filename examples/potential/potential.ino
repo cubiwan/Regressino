@@ -34,9 +34,8 @@ void loop() {
     pr.parameters(values);
     Serial.print("Y = ");
     Serial.print(values[0]);
-    Serial.print("*e ^");
-    Serial.print(values[1]); 
-    Serial.println("* X"); 
+    Serial.print(" * X ^ ");
+    Serial.println(values[1]); 
 
     Serial.println("Reset ->");
     pr.reset();
