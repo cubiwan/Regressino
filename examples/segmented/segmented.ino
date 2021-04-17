@@ -55,6 +55,8 @@ void loop() {
     lr.learn(28,87);
     Serial.println("End learn");
 
+    Serial.println("Result (i): SEG , NO-SEG");
+
     for(int i = 0; i < 31; i++){
       Serial.print("Result (");
       Serial.print(i);
@@ -70,7 +72,7 @@ void loop() {
       Serial.println(lr.calculate(i));
     }
 
-    Serial.print("Correlation: ");
+    Serial.println("Correlation: ");
     Serial.print("lr1: ");
     Serial.println(lr1.correlation());
     Serial.print("lr2: ");
