@@ -34,7 +34,7 @@ void loop() {
 
     Serial.print("Values: ");
     lr.parameters(values);
-    Serial.print("Y = 1 / 1+e^-");
+    Serial.print("Y = 1 / 1+e^-(");
     Serial.print(values[0]);
     Serial.print("x + ");
     Serial.print(values[1]); 
