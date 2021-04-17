@@ -6,6 +6,7 @@
 class LinearRegression {
     public:
         void learn(double x, double y);
+        void learn(double x, double y, double w);
         double calculate(double x);
         double correlation();
         void parameters(double values[]);
