@@ -20,6 +20,18 @@ void LinearRegression::learn(double x, double y){
     b = meanY-(m*meanX);
 }
 
+void LinearRegression::learn(double x, double y, double w){
+    if(w >= 1) { 
+        learn(x,y);
+    } else if(w <= 0) {
+        return;
+    } 
+
+    x = x*w + meanX*(1-w);
+    y = y*w + meanY*(1-w);
+    learn(x, y);
+}
+
 double LinearRegression::correlation() {
     double stdX = sqrt(varX);
     double stdY = sqrt(varY);
