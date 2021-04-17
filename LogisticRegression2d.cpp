@@ -9,19 +9,19 @@ void LogisticRegression2d::learn(double x1, double x2, double y){
 }
 
 double LogisticRegression2d::correlation() {
-    lr2d.correlation();
+    return lr2d.correlation();
 }
 
 double LogisticRegression2d::correlationX1Y() {
-    lr2d.correlation();
+    return lr2d.correlationX1Y();
 }
 
 double LogisticRegression2d::correlationX2Y() {
-    lr2d.correlation();
+    return lr2d.correlationX2Y();
 }
 
 double LogisticRegression2d::correlationX1X2() {
-    lr2d.correlation();
+    return lr2d.correlationX1X2();
 }
 
 double LogisticRegression2d::calculate(double x1, double x2) {
