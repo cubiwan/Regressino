@@ -1,5 +1,5 @@
-#ifndef LinearRegression_h
-#define LinearRegression_h
+#ifndef PolynomialRegression_h
+#define PolynomialRegression_h
 
 #include "Arduino.h"
 #include "LinearRegression2d.h"
